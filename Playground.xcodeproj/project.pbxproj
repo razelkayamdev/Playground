@@ -13,7 +13,12 @@
 		92E2CDAC1B3B0B2A005802AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E2CDAA1B3B0B2A005802AE /* Main.storyboard */; };
 		92E2CDAE1B3B0B2A005802AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E2CDAD1B3B0B2A005802AE /* Images.xcassets */; };
 		92E2CDB11B3B0B2A005802AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E2CDAF1B3B0B2A005802AE /* LaunchScreen.xib */; };
-		92E2CDBD1B3B0B2A005802AE /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDBC1B3B0B2A005802AE /* PlaygroundTests.m */; };
+		92E2CDC71B3B0BA7005802AE /* APXRandomUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDC61B3B0BA7005802AE /* APXRandomUserTests.m */; };
+		92E2CDD21B3B0BBF005802AE /* APXLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDCB1B3B0BBF005802AE /* APXLocation.m */; };
+		92E2CDD31B3B0BBF005802AE /* APXName.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDCD1B3B0BBF005802AE /* APXName.m */; };
+		92E2CDD41B3B0BBF005802AE /* APXPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDCF1B3B0BBF005802AE /* APXPictures.m */; };
+		92E2CDD51B3B0BBF005802AE /* APXRandomUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDD11B3B0BBF005802AE /* APXRandomUser.m */; };
+		92E2CDD81B3B0BCC005802AE /* APXNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDD71B3B0BCC005802AE /* APXNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,17 @@
 		92E2CDB01B3B0B2A005802AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		92E2CDB61B3B0B2A005802AE /* PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E2CDBB1B3B0B2A005802AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E2CDBC1B3B0B2A005802AE /* PlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundTests.m; sourceTree = "<group>"; };
+		92E2CDC61B3B0BA7005802AE /* APXRandomUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APXRandomUserTests.m; sourceTree = "<group>"; };
+		92E2CDCA1B3B0BBF005802AE /* APXLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APXLocation.h; path = Model/APXLocation.h; sourceTree = "<group>"; };
+		92E2CDCB1B3B0BBF005802AE /* APXLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APXLocation.m; path = Model/APXLocation.m; sourceTree = "<group>"; };
+		92E2CDCC1B3B0BBF005802AE /* APXName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APXName.h; path = Model/APXName.h; sourceTree = "<group>"; };
+		92E2CDCD1B3B0BBF005802AE /* APXName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APXName.m; path = Model/APXName.m; sourceTree = "<group>"; };
+		92E2CDCE1B3B0BBF005802AE /* APXPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APXPictures.h; path = Model/APXPictures.h; sourceTree = "<group>"; };
+		92E2CDCF1B3B0BBF005802AE /* APXPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APXPictures.m; path = Model/APXPictures.m; sourceTree = "<group>"; };
+		92E2CDD01B3B0BBF005802AE /* APXRandomUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APXRandomUser.h; path = Model/APXRandomUser.h; sourceTree = "<group>"; };
+		92E2CDD11B3B0BBF005802AE /* APXRandomUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APXRandomUser.m; path = Model/APXRandomUser.m; sourceTree = "<group>"; };
+		92E2CDD61B3B0BCB005802AE /* APXNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APXNetworkManager.h; path = Managers/APXNetworkManager.h; sourceTree = "<group>"; };
+		92E2CDD71B3B0BCC005802AE /* APXNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APXNetworkManager.m; path = Managers/APXNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,8 @@
 		92E2CD9F1B3B0B2A005802AE /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				92E2CDC91B3B0BB0005802AE /* Managers */,
+				92E2CDC81B3B0BAA005802AE /* Model */,
 				92E2CDA41B3B0B2A005802AE /* AppDelegate.h */,
 				92E2CDA51B3B0B2A005802AE /* AppDelegate.m */,
 				92E2CDA71B3B0B2A005802AE /* ViewController.h */,
@@ -105,7 +122,7 @@
 		92E2CDB91B3B0B2A005802AE /* PlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				92E2CDBC1B3B0B2A005802AE /* PlaygroundTests.m */,
+				92E2CDC61B3B0BA7005802AE /* APXRandomUserTests.m */,
 				92E2CDBA1B3B0B2A005802AE /* Supporting Files */,
 			);
 			path = PlaygroundTests;
@@ -117,6 +134,30 @@
 				92E2CDBB1B3B0B2A005802AE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92E2CDC81B3B0BAA005802AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92E2CDCA1B3B0BBF005802AE /* APXLocation.h */,
+				92E2CDCB1B3B0BBF005802AE /* APXLocation.m */,
+				92E2CDCC1B3B0BBF005802AE /* APXName.h */,
+				92E2CDCD1B3B0BBF005802AE /* APXName.m */,
+				92E2CDCE1B3B0BBF005802AE /* APXPictures.h */,
+				92E2CDCF1B3B0BBF005802AE /* APXPictures.m */,
+				92E2CDD01B3B0BBF005802AE /* APXRandomUser.h */,
+				92E2CDD11B3B0BBF005802AE /* APXRandomUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		92E2CDC91B3B0BB0005802AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				92E2CDD61B3B0BCB005802AE /* APXNetworkManager.h */,
+				92E2CDD71B3B0BCC005802AE /* APXNetworkManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E2CDD51B3B0BBF005802AE /* APXRandomUser.m in Sources */,
+				92E2CDD31B3B0BBF005802AE /* APXName.m in Sources */,
 				92E2CDA91B3B0B2A005802AE /* ViewController.m in Sources */,
+				92E2CDD41B3B0BBF005802AE /* APXPictures.m in Sources */,
+				92E2CDD81B3B0BCC005802AE /* APXNetworkManager.m in Sources */,
 				92E2CDA61B3B0B2A005802AE /* AppDelegate.m in Sources */,
+				92E2CDD21B3B0BBF005802AE /* APXLocation.m in Sources */,
 				92E2CDA31B3B0B2A005802AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E2CDBD1B3B0B2A005802AE /* PlaygroundTests.m in Sources */,
+				92E2CDC71B3B0BA7005802AE /* APXRandomUserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
