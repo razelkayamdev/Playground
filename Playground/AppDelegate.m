@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <PlaygroundFramework/PFLogger.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [PFLogger logMessage:@"message"];
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9268045F1B401CBE00CA86B1 /* PlaygroundFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268045E1B401CBE00CA86B1 /* PlaygroundFramework.framework */; };
 		92E2CDA31B3B0B2A005802AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDA21B3B0B2A005802AE /* main.m */; };
 		92E2CDA61B3B0B2A005802AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDA51B3B0B2A005802AE /* AppDelegate.m */; };
 		92E2CDA91B3B0B2A005802AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2CDA81B3B0B2A005802AE /* ViewController.m */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9268045E1B401CBE00CA86B1 /* PlaygroundFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlaygroundFramework.framework; path = Frameworks/PlaygroundFramework.framework; sourceTree = "<group>"; };
 		92E2CD9D1B3B0B2A005802AE /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E2CDA11B3B0B2A005802AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92E2CDA21B3B0B2A005802AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9268045F1B401CBE00CA86B1 /* PlaygroundFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9268045B1B401C6800CA86B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9268045E1B401CBE00CA86B1 /* PlaygroundFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92E2CD941B3B0B2A005802AE = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +107,7 @@
 		92E2CD9F1B3B0B2A005802AE /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				9268045B1B401C6800CA86B1 /* Frameworks */,
 				92E2CDC91B3B0BB0005802AE /* Managers */,
 				92E2CDC81B3B0BAA005802AE /* Model */,
 				92E2CDA41B3B0B2A005802AE /* AppDelegate.h */,
@@ -396,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$PROJECT_DIR/**";
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = Playground/Info.plist;
@@ -410,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$PROJECT_DIR/**";
 				INFOPLIST_FILE = Playground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -422,11 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PlaygroundTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teradata.$(PRODUCT_NAME:rfc1034identifier)";
@@ -439,7 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PlaygroundTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teradata.$(PRODUCT_NAME:rfc1034identifier)";
