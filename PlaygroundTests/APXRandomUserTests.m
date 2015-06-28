@@ -102,4 +102,11 @@
     XCTAssert([formatedAddress isEqualToString:@"2253 richmond road\nnewport\nborders\n12345"]);
 }
 
+- (void)testKeyedValues
+{
+    APXRandomUser *randomUser = [[APXRandomUser alloc] initWithKeyedValues:[self getDictionary]];
+    
+    XCTAssertNotNil([randomUser dictionaryWithValuesForKeys:@[]]);
+}
+
 @end
