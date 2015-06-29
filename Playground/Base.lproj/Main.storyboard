@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AJ8-FW-Eov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AJ8-FW-Eov">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,12 +20,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0p-wE-Nf6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <color key="backgroundColor" white="0.87214740950000003" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="pAf-cT-VBZ"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDJ-DM-3Au">
                                 <rect key="frame" x="240" y="20" width="120" height="120"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="RQv-bv-lLb"/>
                                     <constraint firstAttribute="height" constant="120" id="xmr-g9-mvU"/>
@@ -48,7 +54,7 @@
                                     <action selector="segmentedControllValueChanged:" destination="AJ8-FW-Eov" eventType="valueChanged" id="vjn-iu-hNY"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Mj-sO-5s6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Mj-sO-5s6">
                                 <rect key="frame" x="16" y="148" width="568" height="396"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,10 +69,11 @@
                                 </constraints>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-8l-Uzh">
-                                <rect key="frame" x="16" y="28" width="49" height="28"/>
+                                <rect key="frame" x="16" y="52" width="49" height="28"/>
+                                <accessibility key="accessibilityConfiguration" label="Reload"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="LGi-3n-YPc"/>
-                                    <constraint firstAttribute="width" constant="49" id="Pqd-OD-Glt"/>
+                                    <constraint firstAttribute="width" constant="49" id="VfP-ha-KV4"/>
+                                    <constraint firstAttribute="height" constant="28" id="vT0-Xk-Y9f"/>
                                 </constraints>
                                 <state key="normal" title="Reload">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,20 +84,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="FDJ-DM-3Au" secondAttribute="centerX" id="03l-Gg-lQU"/>
+                            <constraint firstItem="IAz-8l-Uzh" firstAttribute="top" secondItem="RjY-gq-COB" secondAttribute="bottom" constant="32" id="0Da-pv-dmC"/>
                             <constraint firstItem="cn7-Fa-UOr" firstAttribute="top" secondItem="4Mj-sO-5s6" secondAttribute="bottom" constant="8" id="A96-uj-Bte"/>
                             <constraint firstAttribute="centerY" secondItem="2Nz-nC-Upe" secondAttribute="centerY" id="CYQ-63-lgf"/>
                             <constraint firstItem="4Mj-sO-5s6" firstAttribute="top" secondItem="FDJ-DM-3Au" secondAttribute="bottom" constant="8" id="JbU-8v-fPr"/>
+                            <constraint firstItem="IAz-8l-Uzh" firstAttribute="leading" secondItem="dyB-zi-e5v" secondAttribute="leading" constant="16" id="OXj-Js-fRO"/>
                             <constraint firstItem="R0p-wE-Nf6" firstAttribute="leading" secondItem="dyB-zi-e5v" secondAttribute="leading" id="Qsy-uP-pG8"/>
                             <constraint firstAttribute="trailing" secondItem="4Mj-sO-5s6" secondAttribute="trailing" constant="16" id="VkC-1p-SOo"/>
                             <constraint firstItem="4Mj-sO-5s6" firstAttribute="leading" secondItem="dyB-zi-e5v" secondAttribute="leading" constant="16" id="WRW-zU-LXa"/>
                             <constraint firstAttribute="trailing" secondItem="R0p-wE-Nf6" secondAttribute="trailing" id="bW5-kd-KXx"/>
                             <constraint firstItem="oT1-Se-fqm" firstAttribute="top" secondItem="cn7-Fa-UOr" secondAttribute="bottom" constant="20" id="byk-tX-9dx"/>
-                            <constraint firstItem="IAz-8l-Uzh" firstAttribute="top" secondItem="RjY-gq-COB" secondAttribute="bottom" constant="8" id="qiv-N4-xud"/>
                             <constraint firstItem="R0p-wE-Nf6" firstAttribute="top" secondItem="dyB-zi-e5v" secondAttribute="top" id="stS-Dr-79f"/>
                             <constraint firstAttribute="centerX" secondItem="cn7-Fa-UOr" secondAttribute="centerX" id="t23-6B-hEA"/>
-                            <constraint firstItem="IAz-8l-Uzh" firstAttribute="leading" secondItem="dyB-zi-e5v" secondAttribute="leadingMargin" id="uDa-gS-OKN"/>
                             <constraint firstAttribute="centerX" secondItem="2Nz-nC-Upe" secondAttribute="centerX" id="ulh-PL-Hox"/>
                             <constraint firstItem="FDJ-DM-3Au" firstAttribute="bottom" secondItem="R0p-wE-Nf6" secondAttribute="bottom" constant="60" id="z5s-q3-tgm"/>
                         </constraints>
